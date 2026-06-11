@@ -11,7 +11,9 @@ const inputClass =
 export function ContactForm() {
   const t = useTranslations('contact.form');
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(false);
+  const [errorKey, setErrorKey] = useState<'' | 'required' | 'consent' | 'save'>('');
+  const [agree, setAgree] = useState(false);
+  const [honeypot, setHoneypot] = useState(''); // 스팸 봇 차단용 (사람은 비워둠)
   const [form, setForm] = useState({
     name: '',
     child: '',
@@ -30,11 +32,22 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name.trim() || (!form.phone.trim() && !form.email.trim())) {
-      setError(true);
+
+    // 스팸 봇 차단: honeypot 필드가 채워졌으면 조용히 성공 처리(저장 안 함)
+    if (honeypot.trim()) {
+      setSubmitted(true);
       return;
     }
-    setError(false);
+
+    if (!form.name.trim() || (!form.phone.trim() && !form.email.trim())) {
+      setErrorKey('required');
+      return;
+    }
+    if (!agree) {
+      setErrorKey('consent');
+      return;
+    }
+    setErrorKey('');
 
     // Supabase 미설정 시: 프론트엔드 접수 확인만 표시 (graceful fallback)
     if (!isSupabaseConfigured()) {
@@ -58,7 +71,7 @@ export function ContactForm() {
       setSubmitted(true);
     } catch (err) {
       console.error('상담 신청 저장 실패:', err);
-      setError(true);
+      setErrorKey('save');
     } finally {
       setSubmitting(false);
     }
@@ -148,7 +161,45 @@ export function ContactForm() {
         />
       </label>
 
-      {error ? <p className="text-sm text-red-600">{t('required')}</p> : null}
+      {/* Honeypot — 사람 눈에 안 보임, 봇만 채움 */}
+      <div aria-hidden className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden">
+        <label>
+          Company
+          <input
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </label>
+      </div>
+
+      {/* 개인정보 수집·이용 동의 */}
+      <label className="flex items-start gap-3 rounded-xl border border-soft-line bg-cream-dark/40 p-4">
+        <input
+          type="checkbox"
+          checked={agree}
+          onChange={(e) => setAgree(e.target.checked)}
+          className="mt-0.5 h-4 w-4 shrink-0 accent-brand"
+        />
+        <span className="text-sm text-brand/80">
+          <span className="font-medium text-brand">{t('consent')}</span>
+          <span className="mt-1 block text-xs leading-relaxed text-brand/55">
+            {t('consentDetail')}
+          </span>
+        </span>
+      </label>
+
+      {errorKey ? (
+        <p className="text-sm text-red-600">
+          {errorKey === 'required'
+            ? t('required')
+            : errorKey === 'consent'
+              ? t('consentRequired')
+              : t('saveError')}
+        </p>
+      ) : null}
 
       <button
         type="submit"

@@ -316,7 +316,11 @@
       "trackAny": "Not sure yet (get a recommendation)",
       "track1": "The Pro Highway",
       "track2": "The Ivy Admission",
-      "track3": "The Global Elite Hobby"
+      "track3": "The Global Elite Hobby",
+      "consent": "I agree to the collection and use of personal information (required)",
+      "consentDetail": "We collect the parent's name, phone, and email to provide consultation, and dispose of them after completion per applicable law.",
+      "consentRequired": "Please agree to the collection and use of personal information.",
+      "saveError": "Failed to submit. Please try again in a moment."
     },
     "info": {
       "eyebrow": "Contact",
@@ -334,6 +338,18 @@
     "explore": "Explore",
     "company": "Company",
     "connect": "Connect",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
     "rights": "© 2026 Global Champions Makers. All rights reserved."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "effective": "Effective date",
+    "notice": "These terms are provided in Korean as the governing language."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "effective": "Effective date",
+    "notice": "This policy is provided in Korean as the governing language."
   }
 }
