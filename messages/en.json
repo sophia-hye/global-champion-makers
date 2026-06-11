@@ -1,0 +1,339 @@
+{
+  "nav": {
+    "brand": "GCM",
+    "about": "About",
+    "tracks": "Tracks",
+    "programs": "Programs",
+    "players": "Players",
+    "schedule": "Schedule",
+    "contact": "Contact",
+    "cta": "Free Consult"
+  },
+  "common": {
+    "viewMore": "View more",
+    "viewStory": "Read our brand story",
+    "viewTracks": "Explore the tracks",
+    "viewPrograms": "See our programs",
+    "viewPlayers": "See players & results",
+    "bookConsult": "Book a free consult",
+    "comingSoon": "This page is coming soon.",
+    "backHome": "Back to home"
+  },
+  "home": {
+    "hero": {
+      "title": "Unshakable minds build unbeatable strategies.",
+      "slogan": "Losing a match never means losing your way.",
+      "body": "The most complete admission strategy begins with an unshakable mind. GCM combines the mental wellness that protects athletes from burnout with the global admission data that drives the odds of failure to zero.",
+      "ctaPrimary": "Book a free consult",
+      "ctaSecondary": "Brand story"
+    },
+    "brandIntro": {
+      "title": "Where data meets wellness.",
+      "body": "GCM (Global Champions Makers) is a premium sports education academy uniting US college tennis admissions with mental wellness. As both a warm mentor and a sharp strategist, we design roadmaps that let young athletes stand on their own — all the way through."
+    },
+    "tracksTeaser": {
+      "title": "Three roads, one strong start.",
+      "body": "From a single starting point in the junior years, three roads open up — matched to each child's strengths and disposition.",
+      "track1": "The surest path to going pro",
+      "track2": "Admission strategy for elite US colleges",
+      "track3": "A premium hobby for global leaders"
+    },
+    "programsTeaser": {
+      "title": "Mind first. Data always.",
+      "body": "Mental wellness that lifts the pressure of scores and rankings, multi-angle admission data that never wavers, and total management that respects each child as a person.",
+      "item1": "A mental safety net",
+      "item2": "Data-driven strategy",
+      "item3": "Total management"
+    },
+    "proof": {
+      "title": "Numbers don't lie.",
+      "body": "We build trust with proven results — not vague hope.",
+      "stat1Label": "UTR growth roadmap",
+      "stat1Value": "10.5 → 13.0+",
+      "stat2Label": "Target admission path",
+      "stat2Value": "NCAA D1·D2",
+      "stat3Label": "Our growth promise",
+      "stat3Value": "180-day journey",
+      "quote": "“Even when they lose a match, this is the place that keeps our child from losing their way in life.”",
+      "quoteBy": "— A GCM parent"
+    },
+    "finalCta": {
+      "title": "Start with a conversation.",
+      "body": "Begin your child's own 2-Track roadmap with a 30-minute free discovery call.",
+      "cta": "Book a free consult",
+      "b2b": "B2B & partnership"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Unshakable minds build unbeatable strategies.",
+      "subtitle": "Even if you lose the match, never lose your direction in life.",
+      "slogan": "Losing a match never means losing your way.",
+      "body": "In a limited and anxious admission environment, are our children's minds being protected? Built on the limitless potential of tennis when started early, GCM combines the mental wellness that shields athletes from burnout with multi-angle global admission data that drives the odds of failure to zero."
+    },
+    "philosophy": {
+      "title": "The earlier they step on the court, the wider their world becomes.",
+      "body": "Tennis is more than a sport. It demands deep focus and strategic thinking, inspiring strong academic achievement in adolescence. GCM has children start tennis when their brain development and physical absorption are at their peak, keeping every path open according to their real abilities and disposition. We break the win-or-lose binary and raise resilient global champions who carve out their own lives in any situation."
+    },
+    "tracks": {
+      "title": "Core Valuable Tracks",
+      "subtitle": "GCM JUNIOR START",
+      "body": "Three realistic and powerful directions that branch out from the junior stage.",
+      "track1": {
+        "tab": "Track 1",
+        "name": "The Pro Highway",
+        "nameKo": "Going Pro",
+        "target": "Students with early talent aiming to become elite athletes",
+        "body": "The earlier training begins, the more exponentially the odds of pro success grow. Through a global-standard system and UTR data-driven training, we build overwhelming court dominance from the junior years and connect athletes to a pro debut by the shortest route."
+      },
+      "track2": {
+        "tab": "Track 2",
+        "name": "The Ivy Admission",
+        "nameKo": "US & Global Admissions",
+        "target": "Students balancing academics and sport, aiming for top overseas universities",
+        "body": "Even short of the pro level, tennis is the most powerful weapon in overseas admissions. We design NCAA D1·D2 admission and full-scholarship roadmaps, organically combining GPA, essays, and portfolios to North American admissions standards — a fail-proof Plan B safety net."
+      },
+      "track3": {
+        "tab": "Track 3",
+        "name": "The Global Elite Hobby",
+        "nameKo": "A Premium Hobby",
+        "target": "Students seeking better academic performance and global networking",
+        "body": "Tennis is the lifelong language of global high society. Immersion in tennis during the junior years relieves stress, maximizes academic focus, and lays a firm foundation for global networking among the world's elite."
+      }
+    },
+    "approach": {
+      "title": "The GCM Approach",
+      "body": "Three differentiated areas where equre's wellness-care philosophy is woven into the GCM system.",
+      "item1": {
+        "title": "Mindset & Mental Wellness",
+        "subtitle": "A mental safety net",
+        "body": "We run a professional mental-care system so children never burn out under the pressure of scores and rankings. Peak performance only emerges when the mind is steady and stress is under control."
+      },
+      "item2": {
+        "title": "Multi-Angle Data Analysis",
+        "subtitle": "Multi-angle admission strategy",
+        "body": "So children are never consumed by sport alone, we balance academics and career on rational data. Through precise multi-faceted analysis, we build an individual portfolio that holds steady against any variable."
+      },
+      "item3": {
+        "title": "Total Management & Pace-making",
+        "subtitle": "Total management",
+        "body": "We respect each child as a person — not a report card or a score — and pace them accordingly. Even through a slump, wellness care helps them recover quickly and get back on track."
+      }
+    },
+    "vision": {
+      "title": "Beyond the scoreboard, toward a bigger world.",
+      "body": "GCM doesn't just make tennis players who hit the ball well. On the court, we build resilient skills that break through limits; off the court, we raise global leaders with the intellect to lead their own lives and the resilience to bounce back. Within the perfect synergy of the warmest wellness mentoring and the sharpest admission strategy, our children grow into true champions who never lose their way — even when they lose a match."
+    }
+  },
+  "tracks": {
+    "hero": {
+      "title": "Three roads, one strong start.",
+      "body": "From a single starting point in the junior years, three roads open up — matched to each child's strengths and disposition."
+    },
+    "intro": {
+      "eyebrow": "GCM Junior Start",
+      "title": "One starting point, three futures.",
+      "body": "GCM never forces a child down a single path. Starting from solid fundamentals in the junior years, we diagnose each child's talent, academics, and disposition with data, then design the three most realistic roads together. Whichever road they take, mental wellness and multi-angle admission data stay with them all the way."
+    },
+    "items": {
+      "track1": {
+        "no": "01",
+        "name": "The Pro Highway",
+        "nameKo": "Going Pro",
+        "target": "Students with early talent aiming to become elite athletes",
+        "body": "The earlier training begins, the more exponentially the odds of pro success grow. Through a global-standard system and UTR data-driven training, we build overwhelming court dominance from the junior years and connect athletes to a pro debut by the shortest route.",
+        "point1": "UTR data-driven individual growth roadmap",
+        "point2": "Global-standard coaching & physical system",
+        "point3": "Pathways into domestic and international pro tours"
+      },
+      "track2": {
+        "no": "02",
+        "name": "The Ivy Admission",
+        "nameKo": "US & Global Admissions",
+        "target": "Students balancing academics and sport, aiming for top overseas universities",
+        "body": "Even short of the pro level, tennis is the most powerful weapon in overseas admissions. We design NCAA D1·D2 admission and full-scholarship roadmaps, organically combining GPA, essays, and portfolios to North American admissions standards — a fail-proof Plan B safety net.",
+        "point1": "NCAA D1·D2 admission & full-scholarship design",
+        "point2": "Integrated GPA, essay, and portfolio management",
+        "point3": "Consulting backed by a North American admissions network"
+      },
+      "track3": {
+        "no": "03",
+        "name": "The Global Elite Hobby",
+        "nameKo": "A Premium Hobby",
+        "target": "Students seeking better academic performance and global networking",
+        "body": "Tennis is the lifelong language of global high society. Immersion in tennis during the junior years relieves stress, maximizes academic focus, and lays a firm foundation for global networking among the world's elite.",
+        "point1": "Stress management and sharper academic focus",
+        "point2": "Opportunities for global elite networking",
+        "point3": "A premium sporting habit for life"
+      }
+    },
+    "cta": {
+      "title": "Which road fits your child?",
+      "body": "In a 30-minute free discovery call, we diagnose your child's current standing and potential, and find the most realistic track together.",
+      "button": "Book a free consult"
+    }
+  },
+  "programs": {
+    "hero": {
+      "title": "Mind first. Data always.",
+      "body": "GCM's integrated program combining a mental safety net, data-driven strategy, and total management."
+    },
+    "intro": {
+      "eyebrow": "The GCM System",
+      "title": "On a steady mind, we build a precise strategy.",
+      "body": "GCM's program stands on three pillars: the mental wellness that protects a child's mind, the multi-angle data strategy that holds steady against any variable, and the total management that respects each child as a person. These three are never separate — they work as one system."
+    },
+    "pillars": {
+      "item1": {
+        "icon": "🌱",
+        "title": "Mindset & Mental Wellness",
+        "subtitle": "A mental safety net",
+        "body": "We run a professional mental-care system so children never burn out under the pressure of scores and rankings. Peak performance only emerges when the mind is steady and stress is under control.",
+        "feature1": "Regular counseling & mental coaching",
+        "feature2": "Burnout prevention and recovery care",
+        "feature3": "Routines for handling high-pressure moments"
+      },
+      "item2": {
+        "icon": "📊",
+        "title": "Multi-Angle Data Analysis",
+        "subtitle": "Multi-angle admission strategy",
+        "body": "So children are never consumed by sport alone, we balance academics and career on rational data. Through precise multi-faceted analysis, we build an individual portfolio that holds steady against any variable.",
+        "feature1": "Integrated UTR & academic data analysis",
+        "feature2": "Individual admission portfolio design",
+        "feature3": "Risk management across admission scenarios"
+      },
+      "item3": {
+        "icon": "🤝",
+        "title": "Total Management & Pace-making",
+        "subtitle": "Total management",
+        "body": "We respect each child as a person — not a report card or a score — and pace them accordingly. Even through a slump, wellness care helps them recover quickly and get back on track.",
+        "feature1": "Integrated academic, training & life management",
+        "feature2": "Slump recovery and pace control",
+        "feature3": "Global manners & leadership coaching"
+      }
+    },
+    "process": {
+      "eyebrow": "How It Works",
+      "title": "Your 180-day journey.",
+      "body": "Not vague hope, but a 180-day roadmap designed step by step to complete your child's independence.",
+      "step1": {
+        "no": "01",
+        "title": "Discovery",
+        "subtitle": "30-minute free discovery call",
+        "body": "We diagnose your child's current level, academics, and disposition, and define their potential and goals together."
+      },
+      "step2": {
+        "no": "02",
+        "title": "Data Roadmap",
+        "subtitle": "Data-driven roadmap design",
+        "body": "We analyze UTR and academic data to precisely design an individual training and admission roadmap."
+      },
+      "step3": {
+        "no": "03",
+        "title": "Wellness Care",
+        "subtitle": "Mental wellness care",
+        "body": "Regular mental care prevents burnout and lifts performance on a foundation of an unshakable mind."
+      },
+      "step4": {
+        "no": "04",
+        "title": "Global Independence",
+        "subtitle": "Standing on their own",
+        "body": "Executing the pro, admission, or hobby track, they grow into a global leader who carves out their own life."
+      }
+    },
+    "cta": {
+      "title": "A steady mind. A precise strategy.",
+      "body": "In a 30-minute free consult, we design the GCM program that fits your child.",
+      "button": "Book a free consult"
+    }
+  },
+  "players": {
+    "hero": {
+      "title": "Numbers don't lie.",
+      "body": "Growth records and admission cases of GCM athletes, proven by data."
+    },
+    "results": {
+      "eyebrow": "Results",
+      "title": "Proven by results.",
+      "stat1": { "value": "10.5 → 13.0+", "label": "Average UTR growth" },
+      "stat2": { "value": "NCAA D1·D2", "label": "Primary admission path" },
+      "stat3": { "value": "100%", "label": "Individual roadmaps" },
+      "stat4": { "value": "180 days", "label": "Our growth promise" }
+    },
+    "roster": {
+      "eyebrow": "Our Players",
+      "title": "Athletes who grew with GCM",
+      "body": "Cases of athletes who started in the junior years and grew on their own tracks.",
+      "note": "* The profiles below are samples and will be replaced with real athlete data.",
+      "player1": { "name": "J. Kim", "year": "2024", "utr": "UTR 12.4", "path": "NCAA D1 · full scholarship" },
+      "player2": { "name": "S. Lee", "year": "2023", "utr": "UTR 11.8", "path": "US college admission · Track 2" },
+      "player3": { "name": "H. Park", "year": "2024", "utr": "UTR 13.1", "path": "Pro tour debut · Track 1" },
+      "player4": { "name": "Y. Choi", "year": "2023", "utr": "UTR 10.9", "path": "Academics + global networking" }
+    },
+    "testimonials": {
+      "eyebrow": "Voices",
+      "title": "Stories from parents and players",
+      "t1": { "quote": "Even on the day his scores dropped, my son didn't fall apart. The mental care was the real deal.", "by": "— Parent, 9th grade" },
+      "t2": { "quote": "Seeing how UTR would rise, backed by data, my vague anxiety simply disappeared.", "by": "— Parent, 10th grade" },
+      "t3": { "quote": "I gained a mentor I can lean on, even off the court.", "by": "— GCM player" }
+    },
+    "cta": {
+      "title": "The next story is your child's.",
+      "body": "Start your child's growth story with a 30-minute free consult.",
+      "button": "Book a free consult"
+    }
+  },
+  "schedule": {
+    "hero": {
+      "title": "Camps & Schedule.",
+      "body": "GCM camp schedules and global partnership programs."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Start with a conversation.",
+      "body": "Begin your child's own 2-Track roadmap with a 30-minute free discovery call."
+    },
+    "form": {
+      "eyebrow": "Free Consultation",
+      "title": "Book a 30-minute free consult",
+      "body": "Leave your details below and our consultant will reach out promptly.",
+      "name": "Parent's name",
+      "namePlaceholder": "Jane Doe",
+      "child": "Child's age / grade",
+      "childPlaceholder": "e.g. 5th grade / age 11",
+      "phone": "Phone",
+      "phonePlaceholder": "+82 10-0000-0000",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "track": "Track of interest",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your child's situation or any questions you have.",
+      "submit": "Request consultation",
+      "required": "Please fill in the required fields.",
+      "success": "Your request has been received!",
+      "successBody": "Our consultant will contact you within one business day.",
+      "trackAny": "Not sure yet (get a recommendation)",
+      "track1": "The Pro Highway",
+      "track2": "The Ivy Admission",
+      "track3": "The Global Elite Hobby"
+    },
+    "info": {
+      "eyebrow": "Contact",
+      "title": "Reach out anytime",
+      "hoursLabel": "Consultation hours",
+      "hours": "Weekdays 10:00 – 19:00 (KST)",
+      "responseLabel": "Response time",
+      "response": "Within one business day",
+      "b2bLabel": "B2B & partnerships",
+      "b2bBody": "For institutional partnerships and group programs, please contact us separately."
+    }
+  },
+  "footer": {
+    "tagline": "Global Champions Makers — where data meets wellness.",
+    "explore": "Explore",
+    "company": "Company",
+    "connect": "Connect",
+    "rights": "© 2026 Global Champions Makers. All rights reserved."
+  }
+}

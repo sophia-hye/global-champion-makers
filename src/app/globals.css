@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-pretendard: 'Pretendard', system-ui, sans-serif;
+  --font-display: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-brand antialiased;
+    font-feature-settings: 'ss01';
+  }
+  ::selection {
+    @apply bg-brand text-cream;
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-6 md:px-8;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold;
+  }
+  .display-title {
+    @apply font-display font-bold tracking-tight;
+  }
+}
