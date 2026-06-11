@@ -53,8 +53,22 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-cream/10">
-        <div className="container-content py-6">
+        <div className="container-content flex flex-col gap-3 py-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-cream/50">{t('footer.rights')}</p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/terms"
+              className="text-xs text-cream/50 transition-colors hover:text-cream"
+            >
+              {t('footer.terms')}
+            </Link>
+            <Link
+              href="/privacy"
+              className="text-xs text-cream/50 transition-colors hover:text-cream"
+            >
+              {t('footer.privacy')}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
