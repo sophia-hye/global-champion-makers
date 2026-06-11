@@ -1,17 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import { CONSULTATIONS_TABLE, type Consultation } from '@/lib/supabase/config';
 
 const STATUS_OPTIONS = ['신규', '연락완료', '상담완료', '등록'] as const;
 type Status = (typeof STATUS_OPTIONS)[number];
 
-const headers = ['접수일', '보호자', '자녀', '연락처', '이메일', '관심 트랙', '상태'];
+const headers = ['접수일', '보호자', '자녀', '연락처', '이메일', '관심 트랙', '상태', '문의'];
 
 export function ConsultationTable({ items }: { items: Consultation[] }) {
   const [rows, setRows] = useState(items);
   const [updating, setUpdating] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState<string | null>(null);
 
   const updateStatus = async (id: string, status: Status) => {
     setUpdating(id);
@@ -54,34 +55,64 @@ export function ConsultationTable({ items }: { items: Consultation[] }) {
           </tr>
         </thead>
         <tbody className="divide-y divide-soft-line">
-          {rows.map((item) => (
-            <tr key={item.id} className="hover:bg-cream-dark/50">
-              <td className="whitespace-nowrap px-4 py-3 text-brand/50">
-                {item.created_at
-                  ? new Date(item.created_at).toLocaleDateString('ko-KR')
-                  : '—'}
-              </td>
-              <td className="px-4 py-3 font-medium text-brand">{item.name}</td>
-              <td className="px-4 py-3 text-brand/70">{item.child || '—'}</td>
-              <td className="whitespace-nowrap px-4 py-3 text-brand/70">{item.phone || '—'}</td>
-              <td className="px-4 py-3 text-brand/70">{item.email || '—'}</td>
-              <td className="px-4 py-3 text-brand/70">{item.track}</td>
-              <td className="px-4 py-3">
-                <select
-                  value={item.status}
-                  disabled={updating === item.id}
-                  onChange={(e) => updateStatus(item.id, e.target.value as Status)}
-                  className="rounded-lg border border-soft-line bg-cream px-2 py-1 text-xs outline-none focus:border-brand disabled:opacity-50"
-                >
-                  {STATUS_OPTIONS.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
-              </td>
-            </tr>
-          ))}
+          {rows.map((item) => {
+            const isOpen = expanded === item.id;
+            return (
+              <Fragment key={item.id}>
+                <tr className="hover:bg-cream-dark/50">
+                  <td className="whitespace-nowrap px-4 py-3 text-brand/50">
+                    {item.created_at
+                      ? new Date(item.created_at).toLocaleDateString('ko-KR')
+                      : '—'}
+                  </td>
+                  <td className="px-4 py-3 font-medium text-brand">{item.name}</td>
+                  <td className="px-4 py-3 text-brand/70">{item.child || '—'}</td>
+                  <td className="whitespace-nowrap px-4 py-3 text-brand/70">
+                    {item.phone || '—'}
+                  </td>
+                  <td className="px-4 py-3 text-brand/70">{item.email || '—'}</td>
+                  <td className="px-4 py-3 text-brand/70">{item.track}</td>
+                  <td className="px-4 py-3">
+                    <select
+                      value={item.status}
+                      disabled={updating === item.id}
+                      onChange={(e) => updateStatus(item.id, e.target.value as Status)}
+                      className="rounded-lg border border-soft-line bg-cream px-2 py-1 text-xs outline-none focus:border-brand disabled:opacity-50"
+                    >
+                      {STATUS_OPTIONS.map((s) => (
+                        <option key={s} value={s}>
+                          {s}
+                        </option>
+                      ))}
+                    </select>
+                  </td>
+                  <td className="px-4 py-3">
+                    {item.message ? (
+                      <button
+                        type="button"
+                        onClick={() => setExpanded(isOpen ? null : item.id)}
+                        className="rounded-lg border border-soft-line px-2.5 py-1 text-xs text-brand/70 hover:border-brand hover:text-brand"
+                      >
+                        {isOpen ? '닫기' : '보기'}
+                      </button>
+                    ) : (
+                      <span className="text-xs text-brand/30">없음</span>
+                    )}
+                  </td>
+                </tr>
+                {isOpen && item.message ? (
+                  <tr className="bg-cream-dark/40">
+                    <td colSpan={headers.length} className="px-4 py-4">
+                      <div className="text-xs font-semibold text-gold">문의 내용</div>
+                      <p className="mt-1.5 whitespace-pre-wrap text-sm leading-relaxed text-brand/80">
+                        {item.message}
+                      </p>
+                    </td>
+                  </tr>
+                ) : null}
+              </Fragment>
+            );
+          })}
         </tbody>
       </table>
     </div>
