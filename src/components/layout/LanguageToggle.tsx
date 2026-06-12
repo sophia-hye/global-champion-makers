@@ -28,6 +28,7 @@ export function LanguageToggle({ tone = 'light' }: { tone?: 'light' | 'dark' }) 
           <button
             type="button"
             onClick={() => switchTo(loc)}
+            aria-label={loc === 'ko' ? '한국어' : 'English'}
             className={`uppercase transition-colors hover:opacity-80 ${
               loc === locale ? active : idle
             }`}

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 type RevealProps = {
   children: React.ReactNode;
@@ -8,8 +8,14 @@ type RevealProps = {
   delay?: number;
 };
 
-// 스크롤 진입 시 페이드업 (Framer Motion)
+// 스크롤 진입 시 페이드업 (Framer Motion). prefers-reduced-motion 존중.
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
+  const reduce = useReducedMotion();
+
+  if (reduce) {
+    return <div className={className}>{children}</div>;
+  }
+
   return (
     <motion.div
       className={className}
