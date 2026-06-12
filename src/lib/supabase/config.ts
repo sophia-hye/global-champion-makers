@@ -9,6 +9,19 @@ export function isSupabaseConfigured(): boolean {
 /** 상담 신청 테이블 (gcm_ prefix) */
 export const CONSULTATIONS_TABLE = 'gcm_consultations';
 
+/** 일정 테이블 (gcm_ prefix) */
+export const SCHEDULES_TABLE = 'gcm_schedules';
+
+export interface ScheduleEvent {
+  id: string;
+  title: string;
+  event_date: string; // YYYY-MM-DD
+  end_date: string | null;
+  category: string | null;
+  description: string | null;
+  created_at?: string;
+}
+
 export type ConsultationStatus = '신규' | '연락완료' | '상담완료' | '등록';
 
 export interface Consultation {
