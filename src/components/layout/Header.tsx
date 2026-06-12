@@ -14,7 +14,7 @@ const navItems = [
   { key: 'contact', href: '/contact' },
 ] as const;
 
-export function Header() {
+export function Header({ showLanguageToggle = true }: { showLanguageToggle?: boolean }) {
   const t = useTranslations('nav');
   const [open, setOpen] = useState(false);
 
@@ -41,7 +41,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <LanguageToggle />
+          {showLanguageToggle ? <LanguageToggle /> : null}
           <Link
             href="/contact"
             className="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-brand-mid"
@@ -79,7 +79,7 @@ export function Header() {
               </Link>
             ))}
             <div className="mt-3 flex items-center justify-between border-t border-soft-line/60 pt-4">
-              <LanguageToggle />
+              {showLanguageToggle ? <LanguageToggle /> : null}
               <Link
                 href="/contact"
                 className="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-cream"

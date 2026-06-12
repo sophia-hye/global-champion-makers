@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/next';
 import { routing } from '@/i18n/routing';
 import { SITE_URL } from '@/lib/seo';
 import { organizationLd } from '@/lib/jsonLd';
+import { isLanguageSwitcherEnabled } from '@/lib/settings';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import '../globals.css';
@@ -67,6 +68,7 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const langSwitcherEnabled = await isLanguageSwitcherEnabled();
 
   return (
     <html lang={locale}>
@@ -86,7 +88,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd(locale)) }}
         />
         <NextIntlClientProvider messages={messages}>
-          <Header />
+          <Header showLanguageToggle={langSwitcherEnabled} />
           <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
