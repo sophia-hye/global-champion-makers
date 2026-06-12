@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { ButtonLink } from '@/components/ui/Button';
+import { HeroVisual } from './HeroVisual';
 
 export function HomeHero() {
   const t = useTranslations('home.hero');
@@ -27,27 +28,8 @@ export function HomeHero() {
           </div>
         </div>
 
-        {/* Visual concept: 흑백 코트 → 컬러 캠퍼스 전환 (이미지 교체 예정) */}
-        <div className="relative grid grid-cols-2 gap-3 animate-fade-up">
-          <div
-            className="relative aspect-[3/4] translate-y-6 overflow-hidden rounded-2xl bg-cover bg-center grayscale"
-            style={{ backgroundImage: "url('/images/court.jpg')" }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-transparent to-transparent" />
-            <span className="absolute bottom-0 p-4 text-xs text-cream/80">
-              On the court
-            </span>
-          </div>
-          <div
-            className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/campus.jpg')" }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-transparent to-transparent" />
-            <span className="absolute bottom-0 p-4 text-xs text-cream/90">
-              Toward the world
-            </span>
-          </div>
-        </div>
+        {/* Visual concept: 흑백 코트 → 컬러 캠퍼스 전환 (Framer Motion) */}
+        <HeroVisual />
       </div>
     </section>
   );

@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/next';
 import { routing } from '@/i18n/routing';
 import { SITE_URL } from '@/lib/seo';
+import { organizationLd } from '@/lib/jsonLd';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import '../globals.css';
@@ -80,6 +81,10 @@ export default async function LocaleLayout({
         />
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd(locale)) }}
+        />
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>

@@ -203,8 +203,8 @@ export function ContactForm() {
 
       <button
         type="submit"
-        disabled={submitting}
-        className="mt-1 inline-flex items-center justify-center rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-brand-mid disabled:opacity-60"
+        disabled={submitting || !agree}
+        className="mt-1 inline-flex items-center justify-center rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-brand-mid disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-brand"
       >
         {t('submit')}
       </button>

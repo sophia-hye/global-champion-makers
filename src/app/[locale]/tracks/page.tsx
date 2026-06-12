@@ -1,8 +1,9 @@
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { TracksHero } from '@/components/tracks/TracksHero';
 import { TracksIntro } from '@/components/tracks/TracksIntro';
 import { TrackDetail } from '@/components/tracks/TrackDetail';
 import { TracksCta } from '@/components/tracks/TracksCta';
+import { tracksLd } from '@/lib/jsonLd';
 
 export async function generateMetadata({
   params,
@@ -27,8 +28,19 @@ export default async function TracksPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const t = await getTranslations('tracks.items');
+  const ld = tracksLd(locale, [
+    { name: t('track1.name'), description: t('track1.body') },
+    { name: t('track2.name'), description: t('track2.body') },
+    { name: t('track3.name'), description: t('track3.body') },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
+      />
       <TracksHero />
       <TracksIntro />
       <TrackDetail
