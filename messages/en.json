@@ -263,12 +263,25 @@
     "roster": {
       "eyebrow": "Our Players",
       "title": "Athletes who grew with GCM",
-      "body": "Cases of athletes who started in the junior years and grew on their own tracks.",
-      "note": "* The profiles below are samples and will be replaced with real athlete data.",
-      "player1": { "name": "J. Kim", "year": "2024", "utr": "UTR 12.4", "path": "NCAA D1 · full scholarship" },
-      "player2": { "name": "S. Lee", "year": "2023", "utr": "UTR 11.8", "path": "US college admission · Track 2" },
-      "player3": { "name": "H. Park", "year": "2024", "utr": "UTR 13.1", "path": "Pro tour debut · Track 1" },
-      "player4": { "name": "Y. Choi", "year": "2023", "utr": "UTR 10.9", "path": "Academics + global networking" }
+      "body": "Real cases of US college admission achieved from very different starting points.",
+      "player1": {
+        "name": "Myeong Se-in",
+        "tag": "Growth case",
+        "start": "Started at UTR 9.5",
+        "path": "Full scholarship, then transfer to Stanford University"
+      },
+      "player2": {
+        "name": "Bae Ju-wan",
+        "tag": "Realistic start → result",
+        "start": "Started around world ranking 1000",
+        "path": "Cowley College (NJCAA) → transfer to Alabama A&M University (D1)"
+      },
+      "player3": {
+        "name": "Hwang Dong-hyeon",
+        "tag": "Top-ranked player",
+        "start": "Started as a top-ranked player",
+        "path": "Admitted to Vanderbilt University (D1) · full scholarship + $200/mo stipend"
+      }
     },
     "testimonials": {
       "eyebrow": "Voices",

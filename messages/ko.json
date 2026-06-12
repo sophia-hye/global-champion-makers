@@ -263,12 +263,25 @@
     "roster": {
       "eyebrow": "Our Players",
       "title": "GCM이 함께한 선수들",
-      "body": "키즈 단계에서 시작해 각자의 트랙에서 성장한 선수들의 사례입니다.",
-      "note": "* 아래는 예시 프로필이며, 실제 선수 정보로 교체될 예정입니다.",
-      "player1": { "name": "J. Kim", "year": "2024", "utr": "UTR 12.4", "path": "NCAA D1 진학 · 전액 장학금" },
-      "player2": { "name": "S. Lee", "year": "2023", "utr": "UTR 11.8", "path": "미국 명문대 입시 · Track 2" },
-      "player3": { "name": "H. Park", "year": "2024", "utr": "UTR 13.1", "path": "프로 투어 데뷔 · Track 1" },
-      "player4": { "name": "Y. Choi", "year": "2023", "utr": "UTR 10.9", "path": "학업 병행 · 글로벌 네트워킹" }
+      "body": "서로 다른 출발점에서 미국 대학 진학을 이뤄낸 실제 사례입니다.",
+      "player1": {
+        "name": "명세인",
+        "tag": "성장형 케이스",
+        "start": "시작 UTR 9.5 (애매한 위치)",
+        "path": "미국 대학 전액 장학금 획득 후 Stanford University 트랜스퍼"
+      },
+      "player2": {
+        "name": "배주완",
+        "tag": "현실적 출발 → 결과",
+        "start": "국제 랭킹 1000위권 시작",
+        "path": "Cowley College (NJCAA) → Alabama A&M University (D1) 트랜스퍼"
+      },
+      "player3": {
+        "name": "황동현",
+        "tag": "상위권 선수",
+        "start": "상위권 선수로 시작",
+        "path": "Vanderbilt University (D1) 진학 · 전액 장학금 + 월 $200 용돈"
+      }
     },
     "testimonials": {
       "eyebrow": "Voices",
