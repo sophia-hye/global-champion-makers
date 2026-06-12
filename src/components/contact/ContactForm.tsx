@@ -192,7 +192,7 @@ export function ContactForm() {
       </label>
 
       {errorKey ? (
-        <p className="text-sm text-red-600">
+        <p role="alert" className="text-sm text-red-600">
           {errorKey === 'required'
             ? t('required')
             : errorKey === 'consent'

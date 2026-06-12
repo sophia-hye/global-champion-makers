@@ -21,11 +21,13 @@ export function Header({ showLanguageToggle = true }: { showLanguageToggle?: boo
   return (
     <header className="sticky top-0 z-50 border-b border-soft-line/60 bg-cream/85 backdrop-blur">
       <div className="container-content flex h-16 items-center justify-between md:h-20">
-        <Link
-          href="/"
-          className="font-display text-xl font-extrabold tracking-tight text-brand"
-        >
-          {t('brand')}
+        <Link href="/" className="flex items-center" aria-label="GCM — Global Champions Makers">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo_horizontal.png"
+            alt="GCM — Global Champions Makers"
+            className="h-8 w-auto md:h-9"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
