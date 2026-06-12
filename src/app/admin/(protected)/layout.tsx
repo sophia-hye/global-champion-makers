@@ -33,6 +33,7 @@ export default async function ProtectedAdminLayout({
               <Link href="/admin" className="text-brand/70 hover:text-brand">상담 신청</Link>
               <Link href="/admin/players" className="text-brand/70 hover:text-brand">선수 관리</Link>
               <Link href="/admin/schedule" className="text-brand/70 hover:text-brand">일정 관리</Link>
+              <Link href="/admin/settings" className="text-brand/70 hover:text-brand">사이트 설정</Link>
             </nav>
           </div>
           <LogoutButton />

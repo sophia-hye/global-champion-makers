@@ -15,6 +15,10 @@ export const SCHEDULES_TABLE = 'gcm_schedules';
 /** 선수 사례 테이블 (gcm_ prefix) */
 export const PLAYERS_TABLE = 'gcm_players';
 
+/** 사이트 설정 테이블 (key-value, gcm_ prefix) */
+export const SETTINGS_TABLE = 'gcm_settings';
+export const KEY_LANG_SWITCHER = 'language_switcher_enabled';
+
 export interface Player {
   id: string;
   name: string;
