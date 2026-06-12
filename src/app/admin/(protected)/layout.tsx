@@ -31,6 +31,7 @@ export default async function ProtectedAdminLayout({
             <span className="font-display text-lg font-extrabold text-brand">GCM Admin</span>
             <nav className="flex items-center gap-4 text-sm">
               <Link href="/admin" className="text-brand/70 hover:text-brand">상담 신청</Link>
+              <Link href="/admin/players" className="text-brand/70 hover:text-brand">선수 관리</Link>
               <Link href="/admin/schedule" className="text-brand/70 hover:text-brand">일정 관리</Link>
             </nav>
           </div>

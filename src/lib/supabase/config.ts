@@ -12,6 +12,19 @@ export const CONSULTATIONS_TABLE = 'gcm_consultations';
 /** 일정 테이블 (gcm_ prefix) */
 export const SCHEDULES_TABLE = 'gcm_schedules';
 
+/** 선수 사례 테이블 (gcm_ prefix) */
+export const PLAYERS_TABLE = 'gcm_players';
+
+export interface Player {
+  id: string;
+  name: string;
+  tag: string | null;
+  start_point: string | null;
+  path: string | null;
+  sort_order: number | null;
+  created_at?: string;
+}
+
 export interface ScheduleEvent {
   id: string;
   title: string;
