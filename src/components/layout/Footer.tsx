@@ -15,9 +15,12 @@ export function Footer() {
     <footer className="bg-brand-dark text-cream">
       <div className="container-content grid gap-12 py-16 md:grid-cols-[1.5fr_1fr_1fr]">
         <div className="flex flex-col gap-4">
-          <span className="font-display text-2xl font-extrabold tracking-tight">
-            {t('nav.brand')}
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo_horizontal.png"
+            alt="GCM — Global Champions Makers"
+            className="h-9 w-auto self-start invert"
+          />
           <p className="max-w-sm text-sm leading-relaxed text-cream/70">
             {t('footer.tagline')}
           </p>
