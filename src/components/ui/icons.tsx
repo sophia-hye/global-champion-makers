@@ -9,12 +9,12 @@ const base = {
   strokeLinejoin: 'round' as const,
 };
 
-// 심리적 웰니스 — 방패 + 하트(보호·심리적 안전망)
+// 심리적 웰니스 — 방패 + 펄스(심리적 안전망·멘탈 헬스)
 export function IconWellness(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} {...props}>
       <path d="M12 3l7 3v5.2c0 4.3-2.9 7.7-7 8.8-4.1-1.1-7-4.5-7-8.8V6l7-3Z" />
-      <path d="M12 15c-1.8-1.2-3-2.4-3-3.8 0-1 .8-1.7 1.7-1.7.7 0 1.1.4 1.3.8.2-.4.6-.8 1.3-.8.9 0 1.7.7 1.7 1.7 0 1.4-1.2 2.6-3 3.8Z" />
+      <path d="M7.8 11.6h1.9l1.1-2.4 1.7 4.2 1-1.8h1.7" />
     </svg>
   );
 }
