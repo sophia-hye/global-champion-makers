@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/ui/Section';
 import { SectionHeading } from '@/components/ui/SectionHeading';
+import { PILLAR_ICONS } from '@/components/ui/icons';
 
 const keys = ['item1', 'item2', 'item3'] as const;
 
@@ -23,8 +24,9 @@ export function Pillars() {
           body={t('intro.body')}
         />
         <div className="grid gap-6 lg:grid-cols-3">
-          {keys.map((key) => {
+          {keys.map((key, i) => {
             const image = images[key];
+            const Icon = PILLAR_ICONS[i];
             return (
               <div
                 key={key}
@@ -43,8 +45,11 @@ export function Pillars() {
                   ) : (
                     <div className="absolute inset-0 bg-gradient-to-br from-brand to-brand-mid" />
                   )}
-                  <span className="absolute bottom-4 left-5 text-3xl" aria-hidden>
-                    {p(`${key}.icon`)}
+                  <span
+                    className="absolute bottom-4 left-5 flex h-12 w-12 items-center justify-center rounded-full bg-brand-dark/70 ring-1 ring-cream/20 backdrop-blur"
+                    aria-hidden
+                  >
+                    <Icon className="h-6 w-6 text-gold-soft" />
                   </span>
                 </div>
 

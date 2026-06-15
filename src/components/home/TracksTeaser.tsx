@@ -9,7 +9,7 @@ export function TracksTeaser() {
 
   const cards = [
     { no: '01', name: 'The Pro Highway', desc: t('track1') },
-    { no: '02', name: 'The Ivy Admission', desc: t('track2') },
+    { no: '02', name: 'Ivy Bound', desc: t('track2') },
     { no: '03', name: 'The Global Elite Hobby', desc: t('track3') },
   ];
 

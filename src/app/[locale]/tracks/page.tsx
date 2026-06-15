@@ -16,7 +16,7 @@ export async function generateMetadata({
     description:
       locale === 'ko'
         ? '프로의 길, 미국·해외 명문대 입시, 프리미엄 취미 — 아이에게 맞는 세 갈래의 길.'
-        : 'The Pro Highway, Ivy Admission, and Global Elite Hobby — three roads for your child.',
+        : 'The Pro Highway, Ivy Bound, and Global Elite Hobby — three roads for your child.',
   };
 }
 
@@ -55,6 +55,7 @@ export default async function TracksPage({
         tone="light"
         visualClass="bg-gradient-to-br from-brand to-brand-mid"
         image="/images/track2.jpg"
+        href="/tracks/ivy-bound"
       />
       <TrackDetail
         trackKey="track3"
