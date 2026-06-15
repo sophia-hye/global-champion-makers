@@ -6,6 +6,7 @@ const paths = [
   '',
   '/about',
   '/tracks',
+  '/tracks/ivy-bound',
   '/programs',
   '/players',
   '/schedule',

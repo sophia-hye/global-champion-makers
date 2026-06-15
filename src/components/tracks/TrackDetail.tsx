@@ -1,5 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/ui/Section';
+import { ButtonLink } from '@/components/ui/Button';
+import type { ComponentProps } from 'react';
 
 type TrackDetailProps = {
   trackKey: 'track1' | 'track2' | 'track3';
@@ -7,6 +9,7 @@ type TrackDetailProps = {
   tone?: 'light' | 'cream-dark';
   visualClass: string;
   image?: string;
+  href?: ComponentProps<typeof ButtonLink>['href'];
 };
 
 export function TrackDetail({
@@ -15,8 +18,10 @@ export function TrackDetail({
   tone = 'light',
   visualClass,
   image,
+  href,
 }: TrackDetailProps) {
   const t = useTranslations(`tracks.items.${trackKey}`);
+  const c = useTranslations('common');
   const points = [t('point1'), t('point2'), t('point3')];
 
   return (
@@ -61,6 +66,11 @@ export function TrackDetail({
               </li>
             ))}
           </ul>
+          {href ? (
+            <ButtonLink href={href} variant="ghost" className="mt-1 text-gold">
+              {c('viewMore')} &rarr;
+            </ButtonLink>
+          ) : null}
         </div>
       </div>
     </Section>
