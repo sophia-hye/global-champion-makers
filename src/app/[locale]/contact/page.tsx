@@ -14,8 +14,8 @@ export async function generateMetadata({
     title: locale === 'ko' ? '상담 신청' : 'Contact',
     description:
       locale === 'ko'
-        ? '30분 무료 디스커버리 상담으로 우리 아이만의 2-Track 로드맵을 시작하세요.'
-        : "Start your child's own 2-track roadmap with a 30-minute free discovery call.",
+        ? '30분 디스커버리 상담으로 우리 아이만의 2-Track 로드맵을 시작하세요.'
+        : "Start your child's own 2-track roadmap with a 30-minute discovery call.",
   };
 }
 

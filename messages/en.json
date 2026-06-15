@@ -7,7 +7,7 @@
     "players": "Players",
     "schedule": "Schedule",
     "contact": "Contact",
-    "cta": "Free Consult"
+    "cta": "Consultation"
   },
   "common": {
     "viewMore": "View more",
@@ -15,7 +15,7 @@
     "viewTracks": "Explore the tracks",
     "viewPrograms": "See our programs",
     "viewPlayers": "See players & results",
-    "bookConsult": "Book a free consult",
+    "bookConsult": "Book a consultation",
     "comingSoon": "This page is coming soon.",
     "backHome": "Back to home"
   },
@@ -24,7 +24,7 @@
       "title": "Unshakable minds build unbeatable strategies.",
       "slogan": "Losing a match never means losing your way.",
       "body": "The strongest admissions strategy begins with an unshakable mind. GCM pairs the mental wellness that protects athletes from burnout with a data-driven US admissions strategy that leaves as little as possible to chance.",
-      "ctaPrimary": "Book a free consult",
+      "ctaPrimary": "Book a consultation",
       "ctaSecondary": "Brand story"
     },
     "brandIntro": {
@@ -59,8 +59,8 @@
     },
     "finalCta": {
       "title": "Start with a conversation.",
-      "body": "Begin your child's personalized roadmap with a 30-minute free discovery call.",
-      "cta": "Book a free consult",
+      "body": "Begin your child's personalized roadmap with a 30-minute discovery call.",
+      "cta": "Book a consultation",
       "b2b": "B2B & partnerships"
     }
   },
@@ -88,7 +88,7 @@
       },
       "track2": {
         "tab": "Track 2",
-        "name": "The Ivy Admission",
+        "name": "Ivy Bound",
         "nameKo": "US & Global Admissions",
         "target": "Students balancing academics and sport, aiming for top overseas universities",
         "body": "Even short of the pro level, tennis is your strongest asset in overseas admissions. We design NCAA D1·D2 admission and full-scholarship roadmaps, aligning GPA, essays, and portfolios with North American admissions standards — a dependable Plan B safety net."
@@ -148,7 +148,7 @@
       },
       "track2": {
         "no": "02",
-        "name": "The Ivy Admission",
+        "name": "Ivy Bound",
         "nameKo": "US & Global Admissions",
         "target": "Students balancing academics and sport, aiming for top overseas universities",
         "body": "Even short of the pro level, tennis is your strongest asset in overseas admissions. We design NCAA D1·D2 admission and full-scholarship roadmaps, aligning GPA, essays, and portfolios with North American admissions standards — a dependable Plan B safety net.",
@@ -169,8 +169,8 @@
     },
     "cta": {
       "title": "Which road fits your child?",
-      "body": "In a 30-minute free discovery call, we assess your child's current standing and potential, and find the most realistic track together.",
-      "button": "Book a free consult"
+      "body": "In a 30-minute discovery call, we assess your child's current standing and potential, and find the most realistic track together.",
+      "button": "Book a consultation"
     }
   },
   "programs": {
@@ -219,7 +219,7 @@
       "step1": {
         "no": "01",
         "title": "Discovery",
-        "subtitle": "30-minute free discovery call",
+        "subtitle": "30-minute discovery call",
         "body": "We assess your child's current level, academics, and temperament, and define their potential and goals together."
       },
       "step2": {
@@ -243,8 +243,8 @@
     },
     "cta": {
       "title": "A steady mind. A precise strategy.",
-      "body": "In a 30-minute free consult, we design the GCM program that fits your child.",
-      "button": "Book a free consult"
+      "body": "In a 30-minute consultation, we design the GCM program that fits your child.",
+      "button": "Book a consultation"
     }
   },
   "players": {
@@ -292,8 +292,8 @@
     },
     "cta": {
       "title": "The next story is your child's.",
-      "body": "Start your child's growth story with a 30-minute free consult.",
-      "button": "Book a free consult"
+      "body": "Start your child's growth story with a 30-minute consultation.",
+      "button": "Book a consultation"
     }
   },
   "schedule": {
@@ -305,11 +305,11 @@
   "contact": {
     "hero": {
       "title": "Start with a conversation.",
-      "body": "Begin your child's personalized roadmap with a 30-minute free discovery call."
+      "body": "Begin your child's personalized roadmap with a 30-minute discovery call."
     },
     "form": {
-      "eyebrow": "Free Consultation",
-      "title": "Book a 30-minute free consult",
+      "eyebrow": "Consultation",
+      "title": "Book a 30-minute consultation",
       "body": "Leave your details below and our consultant will reach out promptly.",
       "name": "Parent's name",
       "namePlaceholder": "Jane Doe",
@@ -328,7 +328,7 @@
       "successBody": "Our consultant will contact you within one business day.",
       "trackAny": "Not sure yet (get a recommendation)",
       "track1": "The Pro Highway",
-      "track2": "The Ivy Admission",
+      "track2": "Ivy Bound",
       "track3": "The Global Elite Hobby",
       "consent": "I agree to the collection and use of my personal information (required)",
       "consentDetail": "We collect the parent's name, phone, and email to provide consultation, and we dispose of this information afterward in accordance with applicable law.",
