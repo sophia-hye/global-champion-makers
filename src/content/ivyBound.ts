@@ -1,4 +1,4 @@
-// Ivy Bound — College Admission Consulting (The Academy at Harvard Square, TAHS)
+// Ivy Bound — College Admission Consulting (operated by GCM)
 // 출처: Ivy Bound 브로슈어. 일부 섹션(Students We Help / How We Achieve Goals /
 // Guidance by Grade / Launch)은 추가 콘텐츠 수신 후 보강 예정.
 
@@ -8,41 +8,41 @@ export const IVY_BOUND = {
     brandRest: 'BOUND',
     title: 'College Admission Consulting',
     tagline: 'Beyond the "Admissions Factory"',
-    org: 'The Academy at Harvard Square (TAHS)',
-    location: '30 JFK Street, Cambridge, MA',
+    org: 'Operated by Global Champions Makers (GCM)',
+    location: '',
   },
   whoWeAre: {
     eyebrow: 'Who We Are',
-    title: 'The Academy at Harvard Square (TAHS)',
+    title: 'GCM Ivy Bound',
     body: "A premier educational consultancy dedicated to transforming high-potential students into leaders at the world's TOP 50 institutions. Going beyond admissions, we empower students to learn, grow, build strong character and values, and shape their own futures through their true purpose.",
   },
   difference: {
-    eyebrow: 'The TAHS Difference',
+    eyebrow: 'The GCM Difference',
     title: 'Beyond the "Admissions Factory"',
-    body: 'In elite admissions, some students are coached to "look great" on paper, adjusting their persona for college. TAHS focuses on cultivating the "Good Heart" and authentic compassion, shaping students into leaders who make a real impact. We guide students through a transformation that prepares them to think, act, and excel like university scholars.',
+    body: 'In elite admissions, some students are coached to "look great" on paper, adjusting their persona for college. GCM focuses on cultivating the "Good Heart" and authentic compassion, shaping students into leaders who make a real impact. We guide students through a transformation that prepares them to think, act, and excel like university scholars.',
   },
   approachEyebrow: 'Our Approach',
   approachTitle: 'Build real potential — not just a profile.',
   approach: [
     {
       title: 'Philosophy: Build Real Potential, Not Just "Fake It"',
-      body: 'In today\'s admissions landscape, many programs focus on presenting students as competitive applicants, highlighting grades, polished resumes, and a wide range of activities. Our approach is different. TAHS\'s goal is not to create a "perfect profile," but to build capable, confident individuals with real, lasting skills — thinking critically, solving problems, communicating effectively, and growing as individuals.',
+      body: 'In today\'s admissions landscape, many programs focus on presenting students as competitive applicants, highlighting grades, polished resumes, and a wide range of activities. Our approach is different. GCM\'s goal is not to create a "perfect profile," but to build capable, confident individuals with real, lasting skills — thinking critically, solving problems, communicating effectively, and growing as individuals.',
     },
     {
       title: 'Process: Transform Students into Leaders, Not Just Ivy-Ready Profiles',
-      body: "TAHS students don't pretend to care through projects, internships, or extracurriculars — they act and reflect from genuine conviction. Leadership comes from personal growth, not college-prep checklists. They learn to help others ethically, with integrity, respect, and genuine care, focusing on real needs rather than assumptions. Through honest reflection on their actions and impact, they develop empathetic and ethical responsibility — understanding that true leadership means supporting others meaningfully, not just looking good on paper.",
+      body: "GCM students don't pretend to care through projects, internships, or extracurriculars — they act and reflect from genuine conviction. Leadership comes from personal growth, not college-prep checklists. They learn to help others ethically, with integrity, respect, and genuine care, focusing on real needs rather than assumptions. Through honest reflection on their actions and impact, they develop empathetic and ethical responsibility — understanding that true leadership means supporting others meaningfully, not just looking good on paper.",
     },
     {
       title: 'Community: Provide Mentorship and Hands-On Impact, Not Transactional Support',
-      body: 'TAHS goes beyond one-way advice. Mentors actively guide students, challenge their thinking, and work alongside them on real-world projects. Students aren\'t treated as "clients"; they become part of a collaborative network where they learn from others, contribute meaningfully, and make a tangible impact.',
+      body: 'GCM goes beyond one-way advice. Mentors actively guide students, challenge their thinking, and work alongside them on real-world projects. Students aren\'t treated as "clients"; they become part of a collaborative network where they learn from others, contribute meaningfully, and make a tangible impact.',
     },
     {
       title: 'Outcome: Prepare for Life, Not Just College',
-      body: 'In today\'s admissions landscape, college is often treated as the ultimate goal, shaping students to fit a profile rather than their true selves. At TAHS, admissions are just one step in a larger journey — an opportunity to explore, grow, and ask, "You\'re accepted — what\'s next?" We help students develop the mindset, discipline, and skills to succeed authentically in college and beyond.',
+      body: 'In today\'s admissions landscape, college is often treated as the ultimate goal, shaping students to fit a profile rather than their true selves. At GCM, admissions are just one step in a larger journey — an opportunity to explore, grow, and ask, "You\'re accepted — what\'s next?" We help students develop the mindset, discipline, and skills to succeed authentically in college and beyond.',
     },
     {
-      title: 'The Power of Place',
-      body: "In the heart of Harvard Square, Cambridge, MA, students are immersed in Harvard University's academic world, gaining direct access to its libraries, lectures, and intellectual culture. We go beyond guidance by embedding students in the Cambridge–Boston ecosystem. From biotech to AI and social innovation, students engage in research, mentorship, and projects with physical access to opportunities others simply can't reach. We don't just discuss the Ivy League — we operate within it.",
+      title: 'The Power of Our Network',
+      body: "Through GCM's global academic network, students gain real access to leading research, mentorship, and intellectual communities. We go beyond advice by embedding students in a living ecosystem — from biotech to AI and social innovation — where they take part in research, mentorship, and projects most simply can't reach. We don't just talk about the Ivy League — we prepare students to operate within it.",
     },
   ],
   stat: {
@@ -122,7 +122,7 @@ export const IVY_BOUND = {
         org: 'Boston University, Ed.D.',
         role: 'Academic Scaffolding',
         detail:
-          "Dr. Cazabon oversees the TAHS Pedagogical Audit. She reviews each student's academic profile to identify cognitive gaps and implements bilingual/multicultural frameworks that make international and diverse candidates stand out as globally competent scholars.",
+          "Dr. Cazabon oversees the GCM Pedagogical Audit. She reviews each student's academic profile to identify cognitive gaps and implements bilingual/multicultural frameworks that make international and diverse candidates stand out as globally competent scholars.",
       },
       {
         name: 'Prof. Matthew S. Kressy',
@@ -180,7 +180,7 @@ export const IVY_BOUND = {
     ],
   },
   onboarding: {
-    eyebrow: 'Launch Your Journey with TAHS',
+    eyebrow: 'Launch Your Journey with GCM',
     title: 'Onboarding Process',
     steps: [
       {
@@ -206,9 +206,9 @@ export const IVY_BOUND = {
     ],
   },
   contact: {
-    email: 'Ivybound@theacademy.ac',
-    address: '30 JFK Street, Cambridge, MA 02138',
-    web: 'www.theacademy.ac',
+    email: 'contact@gcmacademy.com',
+    address: '',
+    web: 'www.gcmacademy.com',
   },
   consultingTeam: {
     eyebrow: 'Our College Consulting Team',

@@ -25,8 +25,8 @@ export async function generateMetadata({
     title: 'Ivy Bound — College Admission Consulting',
     description:
       locale === 'ko'
-        ? 'The Academy at Harvard Square(TAHS) — Admissions Factory를 넘어, 진짜 잠재력을 키우는 미국 명문대 입시 컨설팅.'
-        : 'The Academy at Harvard Square (TAHS) — US college admission consulting that builds real potential, beyond the "Admissions Factory".',
+        ? 'GCM Ivy Bound — Admissions Factory를 넘어, 진짜 잠재력을 키우는 미국 명문대 입시 컨설팅.'
+        : 'GCM Ivy Bound — US college admission consulting that builds real potential, beyond the "Admissions Factory".',
   };
 }
 
@@ -53,9 +53,7 @@ export default async function IvyBoundPage({
             {D.hero.title}
           </p>
           <p className="text-lg font-medium text-gold-soft">{D.hero.tagline}</p>
-          <p className="mt-2 text-sm text-cream/55">
-            {D.hero.org} · {D.hero.location}
-          </p>
+          <p className="mt-2 text-sm text-cream/55">{D.hero.org}</p>
         </div>
       </section>
 
@@ -74,7 +72,7 @@ export default async function IvyBoundPage({
         </div>
       </Section>
 
-      {/* The TAHS Difference */}
+      {/* The GCM Difference */}
       <Section tone="cream-dark">
         <div className="mx-auto flex max-w-3xl flex-col gap-5 text-center">
           <span className="eyebrow mx-auto">{D.difference.eyebrow}</span>
@@ -323,7 +321,7 @@ export default async function IvyBoundPage({
       <section className="bg-gold">
         <div className="container-content flex flex-col items-center gap-6 py-20 text-center md:py-24">
           <h2 className="display-title max-w-2xl text-3xl leading-tight text-brand-dark md:text-4xl">
-            Launch your journey with TAHS.
+            Launch your journey with GCM.
           </h2>
           <ButtonLink
             href="/contact"
@@ -334,7 +332,6 @@ export default async function IvyBoundPage({
           </ButtonLink>
           <div className="mt-2 flex flex-col gap-1 text-sm text-brand-dark/80">
             <span>{D.contact.email}</span>
-            <span>{D.contact.address}</span>
             <span>{D.contact.web}</span>
           </div>
         </div>
